@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Generator | AI Creator Suite</title>
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme-style">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-magic"></i> AI Creator
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-item active"> <i class="fas fa-braille"></i> Playgrounds
+            </a>
+            <a href="#" class="nav-item disabled">
+                <i class="fas fa-ellipsis-h"></i> More
+            </a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <span class="breadcrumb"><a href="index.html">Playgrounds</a> / </span>
+                <h1>Slide Generator</h1>
+            </div>
+            <div class="header-right">
+                <button class="header-btn"><i class="fas fa-redo-alt"></i></button>
+                <button class="header-btn"><i class="fas fa-ellipsis-v"></i></button>
+                <span class="user-info">chrisgpublic-7248-resource</span>
+                <span class="user-avatar">CP</span>
+            </div>
+        </header>
+
+        <div id="loader-container">
+            <div class="loader"></div>
+            <p id="loader-text">Warming up the AI... this may take a moment.</p>
+        </div>
+
+        <div id="generator-ui">
+            <h2>1. Choose Your Theme</h2>
+            <div class="theme-selector">
+                <button class="theme-btn active" data-theme="Professional">Professional</button>
+                <button class="theme-btn" data-theme="Engaging">Engaging</button>
+                <button class="theme-btn" data-theme="Academic">Academic</button>
+            </div>
+
+            <h2>2. Add Your Content</h2>
+            <div class="slide-form">
+                <fieldset>
+                    <legend>Slide 1: The Opener</legend>
+                    <input type="text" id="s1-title" placeholder="Presentation Title">
+                    <textarea id="s1-content" placeholder="Opening statement or key question..."></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Slide 2: The Core</legend>
+                    <input type="text" id="s2-title" placeholder="Main Topic or Argument">
+                    <textarea id="s2-content" placeholder="Key supporting points (use new lines for each)..."></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Slide 3: The Closer</legend>
+                    <input type="text" id="s3-title" placeholder="Conclusion or Key Takeaway">
+                    <textarea id="s3-content" placeholder="Call to action (what should the audience do next?)..."></textarea>
+                </fieldset>
+            </div>
+            <button id="generate-draft-btn">Generate Draft</button>
+        </div>
+
+        <div id="review-ui" style="display: none;">
+            <h2>3. Review and Edit Your AI-Generated Draft</h2>
+            <div class="review-form">
+                <fieldset>
+                    <legend>Slide 1</legend>
+                    <input type="text" id="r1-title">
+                    <textarea id="r1-content" rows="4"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Slide 2</legend>
+                    <input type="text" id="r2-title">
+                    <textarea id="r2-content" rows="4"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Slide 3</legend>
+                    <input type="text" id="r3-title">
+                    <textarea id="r3-content" rows="4"></textarea>
+                </fieldset>
+            </div>
+            <button id="create-presentation-btn">Create Presentation</button>
+        </div>
+        
+        <div class="reveal">
+            <div class="slides">
+                </div>
+        </div>
+    </div> <script type="module" src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.1"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="generator.js"></script>
+
+</body>
+</html>
