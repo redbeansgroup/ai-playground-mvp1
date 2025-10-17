@@ -1,40 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Creator Suite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-magic"></i> AI Creator
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+                <i class="fas fa-braille"></i> Playgrounds
+            </a>
+            <a href="#" class="nav-item disabled">
+                <i class="fas fa-ellipsis-h"></i> More
+            </a>
+        </nav>
+    </div>
 
-		<title>reveal.js</title>
+    <div class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <span class="breadcrumb">Overview / </span>
+                <h1>Playgrounds</h1>
+            </div>
+            <div class="header-right">
+                <button class="header-btn"><i class="fas fa-redo-alt"></i></button>
+                <button class="header-btn"><i class="fas fa-ellipsis-v"></i></button>
+                <span class="user-info">chrisgpublic-7248-resource</span>
+                <span class="user-avatar">CP</span>
+            </div>
+        </header>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+        <div class="playground-section">
+            <div class="intro-card">
+                <h2>Build AI-powered agents that are securely grounded in your enterprise data and can take independent action via APIs and other connected, model-driven functions.</h2>
+                <a href="#" class="intro-button">Let's go</a>
+                <div class="intro-chatbot">
+                    <div class="chatbot-bubble">Write a sales report based on recent data</div>
+                    <div class="chatbot-input">
+                        <span>64000 tokens to be sent</span>
+                        <button class="run-button"><i class="fas fa-play"></i> Run</button>
+                    </div>
+                </div>
+            </div>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+            <div class="playground-grid">
+                <div class="playground-card">
+                    <div class="card-icon"><i class="fas fa-chalkboard"></i></div>
+                    <h3>Slide Generator MVP</h3>
+                    <p>Create engaging, AI-powered 3-slide presentations from your text.</p>
+                    <a href="generator.html" class="try-button">Try The Slide Playground</a>
+                </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+                <div class="playground-card">
+                    <div class="card-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Landing Page Generator MVP</h3>
+                    <p>Generate marketing-focused landing page content from product descriptions.</p>
+                    <a href="#" class="try-button disabled">Coming Soon</a>
+                </div>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+                <div class="playground-card">
+                    <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Chart Generator MVP</h3>
+                    <p>Visually represent data with AI-suggested charts and graphs.</p>
+                    <a href="#" class="try-button disabled">Coming Soon</a>
+                </div>
+
+                <div class="playground-card">
+                    <div class="card-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3>Newsletter Generator</h3>
+                    <p>Craft compelling email newsletter content for your audience.</p>
+                    <a href="#" class="try-button disabled">Coming Soon</a>
+                </div>
+
+                <div class="playground-card">
+                    <div class="card-icon"><i class="fas fa-share-alt"></i></div>
+                    <h3>Social Media Post Creator</h3>
+                    <p>Generate engaging posts optimized for various social platforms.</p>
+                    <a href="#" class="try-button disabled">Coming Soon</a>
+                </div>
+
+                <div class="playground-card">
+                    <div class="card-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Blog Post Outline Generator</h3>
+                    <p>Develop structured outlines for detailed blog articles and content.</p>
+                    <a href="#" class="try-button disabled">Coming Soon</a>
+                </div>
+
+                <div class="playground-card">
+                    <div class="card-icon"><i class="fas fa-tags"></i></div>
+                    <h3>Product Description Writer</h3>
+                    <p>Create enticing product descriptions for e-commerce listings.</p>
+                    <a href="#" class="try-button disabled">Coming Soon</a>
+                </div>
+
+                <div class="playground-card">
+                    <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Interactive Storyteller</h3>
+                    <p>Co-create dynamic narratives and plotlines with AI assistance.</p>
+                    <a href="#" class="try-button disabled">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
